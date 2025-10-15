@@ -280,7 +280,7 @@ body {
 }
 
 .section-7 a:hover {
-  color: #000000;
+  color: rgb(51, 51, 51);
   text-decoration: underline;
 }
 
