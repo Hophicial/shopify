@@ -8,10 +8,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  position: fixed;
 }
 
 .site-header .logo img {
@@ -82,6 +82,7 @@ body {
   text-align: left;
   max-width: 600px;
   margin: 1.5rem auto 0;
+  position: fixed;
 }
 
 .section-2-2 .signup-form {
@@ -287,4 +288,85 @@ body {
 .section-7 div {
   display: flex;
   justify-content: flex-end;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1024px) {
+  .section-3 {
+    grid-template-columns: 1fr;
+    padding: 4rem 5%;
+  }
+
+  .section-5-1 h2 {
+    font-size: 2rem;
+  }
+
+  .section-6-1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-header {
+    padding: 15px 20px;
+  }
+
+  .site-header .logo img {
+    height: 28px;
+  }
+
+  .section-2-1 h1 {
+    font-size: 28px;
+  }
+
+  .section-2-1 .lead {
+    font-size: 1rem;
+  }
+
+  .section-2-2 .signup-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section-3 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+  }
+
+  .section-3 article {
+    padding: 2rem 1.5rem;
+  }
+
+  .section-5 {
+    padding: 4rem 1.5rem;
+    border-radius: 25px;
+  }
+
+  .section-5 .signup-form.inline {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .section-6 {
+    padding: 4rem 1.5rem;
+  }
+
+  .section-6-1 {
+    font-size: 1.8rem;
+  }
+
+  .section-7 {
+    text-align: center;
+  }
+
+  .section-7 div {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .background-video {
+    object-position: center;
+  }
 }
