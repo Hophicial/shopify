@@ -290,7 +290,7 @@ body {
   justify-content: flex-end;
 }
 
-/* RESPONSIVENESS */
+ /* responsivness */
 
 @media (max-width: 1024px) {
   .section-3 {
